@@ -17,12 +17,12 @@ public class Dbutily {
 			e.printStackTrace();
 		}
 		
-		String url="jdbc:mysql://localhost:3306/sb101db";
+		String url="jdbc:mysql://localhost:3306/course_monitoring_system";
 		
 		
 		
 		try {
-			conn= DriverManager.getConnection(url,"root","root");
+			conn= DriverManager.getConnection(url,"root","About@1370");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
