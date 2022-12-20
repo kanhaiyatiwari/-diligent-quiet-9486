@@ -1,5 +1,5 @@
 # -diligent-quiet-9486
-Course monitring -System
+Course monitoring -System
 ther is two users in this System
 Adminstrator
 faculty
