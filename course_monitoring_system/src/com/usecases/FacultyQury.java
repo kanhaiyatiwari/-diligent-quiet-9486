@@ -65,7 +65,7 @@ public class FacultyQury {
 			System.out.println(e.getMessage());
 		}
 	}
-	public void print() {
+	public  void print() {
 Scanner s=new Scanner(System.in);
 		
 		System.out.println("please select any one");

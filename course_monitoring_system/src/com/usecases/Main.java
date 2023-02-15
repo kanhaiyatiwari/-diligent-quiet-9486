@@ -1,7 +1,5 @@
 package com.usecases;
-import java.io.*;
-
-import java.util.*;
+import java.util.Scanner;
 
 import com.colors.Color;
 public class Main {
@@ -23,7 +21,8 @@ public class Main {
 	    	   
 	       }
 	       else {
-	    	   System.out.println("try for faculty");
+	    	   FacultyQury f=new FacultyQury();
+	    	   f.print();
 	       }
        
 	}
