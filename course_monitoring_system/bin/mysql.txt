@@ -33,3 +33,17 @@ status varchar(255),
 foreign key ( batchid ) references   batch( batchid )
 
 );
+
+ create table administrator
+ (
+ username varchar(255),
+ password varchar(255)
+ );
+ 
+ create table course
+ (
+ courseid int,
+ courseName varchar(255),
+ fee varchar(255),
+ courseDescription varchar(255)
+ );
