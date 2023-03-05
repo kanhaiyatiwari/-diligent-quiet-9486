@@ -19,9 +19,9 @@ create table  faculty
 facultyid int primary key ,
 facultyname varchar(12),
  facultyaddress varchar(12),
-mobile  varchar(15) unique,
-email   varchar(12)unique,
-username  varchar(12)unique,
+mobile  varchar(255) unique not null,
+email   varchar(255)unique not null,
+username  varchar(255)unique,
 password varchar(12)unique
 );
 
