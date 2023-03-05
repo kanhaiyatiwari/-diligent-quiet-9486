@@ -10,8 +10,8 @@ import com.masai.dao.AdministratorDaoemply;
 public class CourseQury {
 	public void createCourse() {
 		Scanner s=new Scanner(System.in);
-		System.out.println(Color.ANSI_YELLOW+"Please enter:-"+Color.ANSI_RESET+Color.ANSI_blue+ " "+"unque id"+ Color.ANSI_RESET +
-				Color.ANSI_PURPLE+"course-name"+Color.ANSI_RESET+"fees"+Color.ANSI_RESET+Color.ANSI_Red+"Description"+Color.ANSI_RESET);
+		System.out.println(Color.ANSI_YELLOW+"Please enter  :-"+Color.ANSI_RESET+Color.ANSI_blue+ " "+" unque id"+ Color.ANSI_RESET +
+				Color.ANSI_PURPLE+"  course-name"+Color.ANSI_RESET+" fees"+Color.ANSI_RESET+Color.ANSI_Red+" Description"+Color.ANSI_RESET);
 		int id=s.nextInt();
 		String name=s.next();
 		int fee=s.nextInt();
@@ -31,7 +31,7 @@ public class CourseQury {
 	public void updateCourse() {
 		Scanner s=new Scanner(System.in);
 		System.out.println(Color.ANSI_YELLOW+"Please enter:-" +
-				Color.ANSI_PURPLE+"New value"+Color.ANSI_RESET+" id of course"+Color.ANSI_RESET);
+				Color.ANSI_PURPLE+"New name"+Color.ANSI_RESET+" id of course"+Color.ANSI_RESET);
 		
 		String new_value=s.next();
 		int id=s.nextInt();
@@ -74,6 +74,8 @@ public class CourseQury {
 				+ ""+Color.ANSI_RESET);
 		int op2=s.nextInt();
 		if(op2==4) {
+			Main m=new Main();
+			m.main(null);
 			return;
 		}
 		if(op2==5) {

@@ -12,9 +12,9 @@ public class FacultyQury {
 	public void create() {
 		
 		Scanner s=new Scanner(System.in);
-		System.out.println(Color.ANSI_YELLOW+"Please enter:-"+Color.ANSI_RESET+Color.ANSI_blue+ " "+"unque id"+ Color.ANSI_RESET +
-				Color.ANSI_PURPLE+"faculty-name"+Color.ANSI_RESET+"faculty-adress"+Color.ANSI_RESET+Color.ANSI_Red+"faculty-moblile"+Color.ANSI_RESET
-				+Color.ANSI_PURPLE+"faculty-Email"+Color.ANSI_RESET+"faculty-username"+Color.ANSI_RESET+Color.ANSI_Red+"faculty-password"+Color.ANSI_RESET);
+		System.out.println(Color.ANSI_YELLOW+" Please enter:-"+Color.ANSI_RESET+Color.ANSI_blue+ " "+"  unque id"+ Color.ANSI_RESET +
+				Color.ANSI_PURPLE+" faculty-name"+Color.ANSI_RESET+" faculty-adress"+Color.ANSI_RESET+Color.ANSI_Red+"faculty-moblile"+Color.ANSI_RESET
+				+Color.ANSI_PURPLE+" faculty-Email"+Color.ANSI_RESET+" faculty-username"+Color.ANSI_RESET+Color.ANSI_Red+" faculty-password"+Color.ANSI_RESET);
 		
 		int id=s.nextInt();
 		String name=s.next();
@@ -92,6 +92,11 @@ Scanner s=new Scanner(System.in);
 		if(op2==5) {
 			AdminQury ad=new AdminQury();
 			ad.optins();
+		}
+		if(op2==4) {
+			Main m=new Main();
+			m.main(null);
+			return;
 		}
 	}
 }

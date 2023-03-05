@@ -10,7 +10,7 @@ public class Main {
 		  
 		// TODO Auto-generated method stub
 		Scanner s=new Scanner(System.in);
-	      System.out.println(Color.ANSI_black_BACKGROUND+Color.ANSI_blue+"If you are Administrator then select 0 and if Faculty then select 1"+Color.ANSI_RESET);
+	      System.out.println("If you are Administrator then select 0 and if Faculty then select 1");
 	       int ans=s.nextInt();
 	      
 	       

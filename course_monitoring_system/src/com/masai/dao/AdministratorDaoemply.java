@@ -23,24 +23,12 @@ public class AdministratorDaoemply implements AdministratorDao {
 		// TODO Auto-generated method stub
 String message="userename and password not matched";
 		
-		try (Connection conn = Dbutily.provideConnection()){
-			PreparedStatement ps = conn.prepareStatement("select * from administrator where username =? and password=?");
-			
-			ps.setString(1, username);
-			ps.setString(2, password);
-			ResultSet rs = ps.executeQuery();
-			if(rs.next()) {
-			String user=rs.getString("username");
-			message=ANSI_green_BACKGROUND+ANSI_white+"Welcom"+" "+user+ANSI_RESET;
-			}
-			else throw  new AdminException("userename and password not match");
-				
-			
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-			throw  new AdminException(e.getMessage());
-		}
+String dusername="kanhaiya";
+String dpassword="123";
+if(dusername.equals(username)&&dpassword.equals(password) )
+	message=ANSI_green_BACKGROUND+ANSI_white+"Welcom"+" "+username+ANSI_RESET;
+
+//		1
 		return message;
 	}
 
