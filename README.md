@@ -78,6 +78,7 @@ desc batch;
 | batchstartDate   | date        | YES  |     | NULL    |       |
 | duration         | varchar(12) | YES  |     | NULL    |       |
 +------------------+-------------+------+-----+---------+-------+</h5>
- 
+
+ ER Diagram
  
  ![table_schema](course_monitoring_system/src/tableSchema.png)
